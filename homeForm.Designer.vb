@@ -22,9 +22,9 @@ Partial Class homeForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnInicio = New System.Windows.Forms.Button()
+        Me.btnSalir = New System.Windows.Forms.Button()
+        Me.btnTextos = New System.Windows.Forms.Button()
         Me.pnlProcesadorTexto = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -41,32 +41,32 @@ Partial Class homeForm
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnInicio
         '
-        Me.Button1.Location = New System.Drawing.Point(132, 483)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(130, 23)
-        Me.Button1.TabIndex = 10
-        Me.Button1.Text = "Inicio"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnInicio.Location = New System.Drawing.Point(132, 483)
+        Me.btnInicio.Name = "btnInicio"
+        Me.btnInicio.Size = New System.Drawing.Size(130, 23)
+        Me.btnInicio.TabIndex = 10
+        Me.btnInicio.Text = "Inicio"
+        Me.btnInicio.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnSalir
         '
-        Me.Button2.Location = New System.Drawing.Point(674, 483)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(130, 23)
-        Me.Button2.TabIndex = 11
-        Me.Button2.Text = "Salir"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnSalir.Location = New System.Drawing.Point(674, 483)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(130, 23)
+        Me.btnSalir.TabIndex = 11
+        Me.btnSalir.Text = "Salir"
+        Me.btnSalir.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnTextos
         '
-        Me.Button3.Location = New System.Drawing.Point(395, 483)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(130, 23)
-        Me.Button3.TabIndex = 12
-        Me.Button3.Text = "Procesador de texto"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnTextos.Location = New System.Drawing.Point(395, 483)
+        Me.btnTextos.Name = "btnTextos"
+        Me.btnTextos.Size = New System.Drawing.Size(130, 23)
+        Me.btnTextos.TabIndex = 12
+        Me.btnTextos.Text = "Procesador de texto"
+        Me.btnTextos.UseVisualStyleBackColor = True
         '
         'pnlProcesadorTexto
         '
@@ -191,9 +191,9 @@ Partial Class homeForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(953, 584)
         Me.Controls.Add(Me.pnlProcesadorTexto)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnTextos)
+        Me.Controls.Add(Me.btnSalir)
+        Me.Controls.Add(Me.btnInicio)
         Me.Name = "homeForm"
         Me.Text = "Menu"
         Me.pnlProcesadorTexto.ResumeLayout(False)
@@ -202,9 +202,9 @@ Partial Class homeForm
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnInicio As Button
+    Friend WithEvents btnSalir As Button
+    Friend WithEvents btnTextos As Button
     Friend WithEvents pnlProcesadorTexto As Panel
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label10 As Label

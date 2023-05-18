@@ -6,15 +6,15 @@
         panel.Show()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub btnTextos_Click(sender As Object, e As EventArgs) Handles btnTextos.Click
         cambiarPanel(formProcesadorTexto)
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
         cambiarPanel(formPresentacion)
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
         Stop
     End Sub
 End Class

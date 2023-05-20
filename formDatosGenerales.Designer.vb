@@ -31,7 +31,6 @@ Partial Class formDatosGenerales
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lboNombres = New System.Windows.Forms.ListBox()
@@ -102,7 +101,7 @@ Partial Class formDatosGenerales
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(610, 75)
+        Me.Button2.Location = New System.Drawing.Point(610, 85)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 7
@@ -111,21 +110,12 @@ Partial Class formDatosGenerales
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(610, 113)
+        Me.Button3.Location = New System.Drawing.Point(610, 132)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 8
         Me.Button3.Text = "Limpiar"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(610, 148)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 9
-        Me.Button4.Text = "Salir"
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'CheckBox1
         '
@@ -208,7 +198,6 @@ Partial Class formDatosGenerales
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.CheckBox1)
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -237,7 +226,6 @@ Partial Class formDatosGenerales
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents lboNombres As ListBox

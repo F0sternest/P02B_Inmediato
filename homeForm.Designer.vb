@@ -37,6 +37,7 @@ Partial Class homeForm
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.btnDatosGenerales = New System.Windows.Forms.Button()
         Me.pnlProcesadorTexto.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -61,7 +62,7 @@ Partial Class homeForm
         '
         'btnTextos
         '
-        Me.btnTextos.Location = New System.Drawing.Point(395, 483)
+        Me.btnTextos.Location = New System.Drawing.Point(315, 483)
         Me.btnTextos.Name = "btnTextos"
         Me.btnTextos.Size = New System.Drawing.Size(130, 23)
         Me.btnTextos.TabIndex = 12
@@ -185,11 +186,21 @@ Partial Class homeForm
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "Jorge Pitti"
         '
+        'btnDatosGenerales
+        '
+        Me.btnDatosGenerales.Location = New System.Drawing.Point(495, 483)
+        Me.btnDatosGenerales.Name = "btnDatosGenerales"
+        Me.btnDatosGenerales.Size = New System.Drawing.Size(130, 23)
+        Me.btnDatosGenerales.TabIndex = 14
+        Me.btnDatosGenerales.Text = "Datos Generales"
+        Me.btnDatosGenerales.UseVisualStyleBackColor = True
+        '
         'homeForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(953, 584)
+        Me.Controls.Add(Me.btnDatosGenerales)
         Me.Controls.Add(Me.pnlProcesadorTexto)
         Me.Controls.Add(Me.btnTextos)
         Me.Controls.Add(Me.btnTerminar)
@@ -217,4 +228,5 @@ Partial Class homeForm
     Friend WithEvents Label6 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents btnDatosGenerales As Button
 End Class

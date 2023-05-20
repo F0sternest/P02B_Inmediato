@@ -23,7 +23,7 @@ Partial Class homeForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnInicio = New System.Windows.Forms.Button()
-        Me.btnSalir = New System.Windows.Forms.Button()
+        Me.btnTerminar = New System.Windows.Forms.Button()
         Me.btnTextos = New System.Windows.Forms.Button()
         Me.pnlProcesadorTexto = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -50,14 +50,14 @@ Partial Class homeForm
         Me.btnInicio.Text = "Inicio"
         Me.btnInicio.UseVisualStyleBackColor = True
         '
-        'btnSalir
+        'btnTerminar
         '
-        Me.btnSalir.Location = New System.Drawing.Point(674, 483)
-        Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(130, 23)
-        Me.btnSalir.TabIndex = 11
-        Me.btnSalir.Text = "Salir"
-        Me.btnSalir.UseVisualStyleBackColor = True
+        Me.btnTerminar.Location = New System.Drawing.Point(674, 483)
+        Me.btnTerminar.Name = "btnTerminar"
+        Me.btnTerminar.Size = New System.Drawing.Size(130, 23)
+        Me.btnTerminar.TabIndex = 11
+        Me.btnTerminar.Text = "Terminar"
+        Me.btnTerminar.UseVisualStyleBackColor = True
         '
         'btnTextos
         '
@@ -192,7 +192,7 @@ Partial Class homeForm
         Me.ClientSize = New System.Drawing.Size(953, 584)
         Me.Controls.Add(Me.pnlProcesadorTexto)
         Me.Controls.Add(Me.btnTextos)
-        Me.Controls.Add(Me.btnSalir)
+        Me.Controls.Add(Me.btnTerminar)
         Me.Controls.Add(Me.btnInicio)
         Me.Name = "homeForm"
         Me.Text = "Menu"
@@ -203,7 +203,7 @@ Partial Class homeForm
 
     End Sub
     Friend WithEvents btnInicio As Button
-    Friend WithEvents btnSalir As Button
+    Friend WithEvents btnTerminar As Button
     Friend WithEvents btnTextos As Button
     Friend WithEvents pnlProcesadorTexto As Panel
     Friend WithEvents GroupBox1 As GroupBox

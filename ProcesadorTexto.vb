@@ -15,4 +15,5 @@
         txtResultado.Text = ""
         txtResultado.ForeColor = Color.Black
     End Sub
+
 End Class

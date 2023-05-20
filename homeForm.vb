@@ -14,7 +14,7 @@
         cambiarPanel(formPresentacion)
     End Sub
 
-    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
-        Stop
+    Private Sub btnTerminar_Click(sender As Object, e As EventArgs) Handles btnTerminar.Click
+        Close()
     End Sub
 End Class

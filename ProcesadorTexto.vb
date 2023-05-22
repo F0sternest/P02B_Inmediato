@@ -24,9 +24,6 @@ Public Class formProcesadorTexto
             chkNegrita.CheckState = CheckState.Unchecked
         End If
     End Sub
-    Private Sub formProcesadorTexto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 
     Private Sub optFondoVerde_CheckedChanged(sender As Object, e As EventArgs) Handles optFondoVerde.CheckedChanged
         txtResultado.BackColor = Color.DarkOliveGreen
@@ -36,10 +33,6 @@ Public Class formProcesadorTexto
         txtResultado.BackColor = Color.DarkRed
     End Sub
 
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
-    End Sub
-
     Private Sub optFondoAzul_CheckedChanged(sender As Object, e As EventArgs) Handles optFondoAzul.CheckedChanged
         txtResultado.BackColor = Color.CadetBlue
     End Sub
@@ -47,6 +40,8 @@ Public Class formProcesadorTexto
     Private Sub chkMayuscula_CheckedChanged(sender As Object, e As EventArgs) Handles chkMayuscula.CheckedChanged
         If chkMayuscula.Checked = True Then
             txtResultado.Text = UCase(txtResultado.Text)
+        Else
+            txtResultado.Text = LCase(txtResultado.Text)
         End If
     End Sub
 

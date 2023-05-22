@@ -118,6 +118,9 @@
     <EmbeddedResource Include="formDatosGenerales.resx">
       <DependentUpon>formDatosGenerales.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formPresentacion.aa-ER.resx">
+      <DependentUpon>formPresentacion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formPresentacion.resx">
       <DependentUpon>formPresentacion.vb</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +148,15 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Modern Technology Linktree Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

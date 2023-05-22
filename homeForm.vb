@@ -10,7 +10,7 @@
         cambiarPanel(formProcesadorTexto)
     End Sub
 
-    Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
+    Private Sub btnInicio_Click(sender As Object, e As EventArgs)
         cambiarPanel(formPresentacion)
     End Sub
     Private Sub btnDatosGenerales_Click(sender As Object, e As EventArgs) Handles btnDatosGenerales.Click
@@ -21,4 +21,19 @@
         Close()
     End Sub
 
+    Private Sub homeForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub btnInicio_Click_1(sender As Object, e As EventArgs) Handles btnInicio.Click
+        cambiarPanel(formPresentacion)
+    End Sub
+
+    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
 End Class

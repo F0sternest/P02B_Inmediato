@@ -25,117 +25,146 @@ Partial Class formDatosGenerales
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.txtEdad = New System.Windows.Forms.TextBox()
+        Me.txtTelefono = New System.Windows.Forms.TextBox()
+        Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.btnLimpiar = New System.Windows.Forms.Button()
+        Me.chkEstado = New System.Windows.Forms.CheckBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.lboNombres = New System.Windows.Forms.ListBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.ListBox2 = New System.Windows.Forms.ListBox()
-        Me.ListBox3 = New System.Windows.Forms.ListBox()
+        Me.txtContador = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.lboEstado = New System.Windows.Forms.ListBox()
+        Me.lboTel = New System.Windows.Forms.ListBox()
+        Me.lboEdad = New System.Windows.Forms.ListBox()
+        Me.lboNombre = New System.Windows.Forms.ListBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.White
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(39, 47)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(92, 13)
+        Me.Label1.Size = New System.Drawing.Size(121, 17)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Apellido y Nombre"
+        Me.Label1.Text = "Nombre y apellido:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.White
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(39, 90)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(38, 13)
+        Me.Label2.Size = New System.Drawing.Size(45, 17)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Edad: "
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.White
+        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(39, 134)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(55, 13)
+        Me.Label3.Size = New System.Drawing.Size(66, 17)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Telefono: "
         '
-        'TextBox1
+        'txtNombre
         '
-        Me.TextBox1.Location = New System.Drawing.Point(137, 47)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(336, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.txtNombre.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombre.Location = New System.Drawing.Point(169, 45)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(336, 25)
+        Me.txtNombre.TabIndex = 3
         '
-        'TextBox2
+        'txtEdad
         '
-        Me.TextBox2.Location = New System.Drawing.Point(137, 90)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(336, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.txtEdad.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEdad.Location = New System.Drawing.Point(169, 88)
+        Me.txtEdad.Name = "txtEdad"
+        Me.txtEdad.Size = New System.Drawing.Size(336, 25)
+        Me.txtEdad.TabIndex = 4
         '
-        'TextBox3
+        'txtTelefono
         '
-        Me.TextBox3.Location = New System.Drawing.Point(137, 134)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(336, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.txtTelefono.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTelefono.Location = New System.Drawing.Point(169, 132)
+        Me.txtTelefono.Name = "txtTelefono"
+        Me.txtTelefono.Size = New System.Drawing.Size(336, 25)
+        Me.txtTelefono.TabIndex = 5
         '
-        'Button1
+        'btnAgregar
         '
-        Me.Button1.Location = New System.Drawing.Point(610, 37)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Agregar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnAgregar.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnAgregar.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.ForeColor = System.Drawing.Color.White
+        Me.btnAgregar.Location = New System.Drawing.Point(642, 38)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(91, 35)
+        Me.btnAgregar.TabIndex = 6
+        Me.btnAgregar.Text = "Agregar"
+        Me.btnAgregar.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnEliminar
         '
-        Me.Button2.Location = New System.Drawing.Point(610, 85)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Eliminar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnEliminar.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnEliminar.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminar.ForeColor = System.Drawing.Color.White
+        Me.btnEliminar.Location = New System.Drawing.Point(642, 86)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(91, 35)
+        Me.btnEliminar.TabIndex = 7
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnLimpiar
         '
-        Me.Button3.Location = New System.Drawing.Point(610, 132)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 8
-        Me.Button3.Text = "Limpiar"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnLimpiar.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnLimpiar.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLimpiar.ForeColor = System.Drawing.Color.White
+        Me.btnLimpiar.Location = New System.Drawing.Point(642, 133)
+        Me.btnLimpiar.Name = "btnLimpiar"
+        Me.btnLimpiar.Size = New System.Drawing.Size(91, 35)
+        Me.btnLimpiar.TabIndex = 8
+        Me.btnLimpiar.Text = "Limpiar"
+        Me.btnLimpiar.UseVisualStyleBackColor = False
         '
-        'CheckBox1
+        'chkEstado
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(511, 137)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(62, 17)
-        Me.CheckBox1.TabIndex = 10
-        Me.CheckBox1.Text = "Casado"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.chkEstado.AutoSize = True
+        Me.chkEstado.BackColor = System.Drawing.Color.White
+        Me.chkEstado.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkEstado.Location = New System.Drawing.Point(534, 138)
+        Me.chkEstado.Name = "chkEstado"
+        Me.chkEstado.Size = New System.Drawing.Size(71, 21)
+        Me.chkEstado.TabIndex = 10
+        Me.chkEstado.Text = "Casado"
+        Me.chkEstado.UseVisualStyleBackColor = False
         '
         'GroupBox1
         '
-        Me.GroupBox1.BackColor = System.Drawing.Color.Bisque
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.txtContador)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.ListBox3)
-        Me.GroupBox1.Controls.Add(Me.ListBox2)
-        Me.GroupBox1.Controls.Add(Me.ListBox1)
-        Me.GroupBox1.Controls.Add(Me.lboNombres)
+        Me.GroupBox1.Controls.Add(Me.lboEstado)
+        Me.GroupBox1.Controls.Add(Me.lboTel)
+        Me.GroupBox1.Controls.Add(Me.lboEdad)
+        Me.GroupBox1.Controls.Add(Me.lboNombre)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(45, 186)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(709, 230)
@@ -143,67 +172,109 @@ Partial Class formDatosGenerales
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Registro de datos"
         '
-        'lboNombres
+        'txtContador
         '
-        Me.lboNombres.FormattingEnabled = True
-        Me.lboNombres.Location = New System.Drawing.Point(18, 31)
-        Me.lboNombres.Name = "lboNombres"
-        Me.lboNombres.Size = New System.Drawing.Size(204, 147)
-        Me.lboNombres.TabIndex = 0
-        '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(252, 31)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(104, 147)
-        Me.ListBox1.TabIndex = 1
-        '
-        'ListBox2
-        '
-        Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.Location = New System.Drawing.Point(391, 31)
-        Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(137, 147)
-        Me.ListBox2.TabIndex = 2
-        '
-        'ListBox3
-        '
-        Me.ListBox3.FormattingEnabled = True
-        Me.ListBox3.Location = New System.Drawing.Point(565, 31)
-        Me.ListBox3.Name = "ListBox3"
-        Me.ListBox3.Size = New System.Drawing.Size(123, 147)
-        Me.ListBox3.TabIndex = 3
+        Me.txtContador.Location = New System.Drawing.Point(318, 195)
+        Me.txtContador.Name = "txtContador"
+        Me.txtContador.Size = New System.Drawing.Size(100, 23)
+        Me.txtContador.TabIndex = 12
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(211, 198)
+        Me.Label4.Location = New System.Drawing.Point(183, 198)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(104, 13)
+        Me.Label4.Size = New System.Drawing.Size(129, 17)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Total de Ingresados:"
         '
-        'TextBox4
+        'lboEstado
         '
-        Me.TextBox4.Location = New System.Drawing.Point(318, 195)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 12
+        Me.lboEstado.FormattingEnabled = True
+        Me.lboEstado.ItemHeight = 17
+        Me.lboEstado.Location = New System.Drawing.Point(565, 57)
+        Me.lboEstado.Name = "lboEstado"
+        Me.lboEstado.Size = New System.Drawing.Size(123, 106)
+        Me.lboEstado.TabIndex = 3
+        '
+        'lboTel
+        '
+        Me.lboTel.FormattingEnabled = True
+        Me.lboTel.ItemHeight = 17
+        Me.lboTel.Location = New System.Drawing.Point(391, 57)
+        Me.lboTel.Name = "lboTel"
+        Me.lboTel.Size = New System.Drawing.Size(137, 106)
+        Me.lboTel.TabIndex = 2
+        '
+        'lboEdad
+        '
+        Me.lboEdad.FormattingEnabled = True
+        Me.lboEdad.ItemHeight = 17
+        Me.lboEdad.Location = New System.Drawing.Point(252, 57)
+        Me.lboEdad.Name = "lboEdad"
+        Me.lboEdad.Size = New System.Drawing.Size(104, 106)
+        Me.lboEdad.TabIndex = 1
+        '
+        'lboNombre
+        '
+        Me.lboNombre.FormattingEnabled = True
+        Me.lboNombre.ItemHeight = 17
+        Me.lboNombre.Location = New System.Drawing.Point(18, 57)
+        Me.lboNombre.Name = "lboNombre"
+        Me.lboNombre.Size = New System.Drawing.Size(204, 106)
+        Me.lboNombre.TabIndex = 0
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(15, 31)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(57, 17)
+        Me.Label5.TabIndex = 12
+        Me.Label5.Text = "Nombre"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(249, 31)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(38, 17)
+        Me.Label6.TabIndex = 13
+        Me.Label6.Text = "Edad"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(388, 31)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(59, 17)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "Telefono"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(562, 31)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(48, 17)
+        Me.Label8.TabIndex = 15
+        Me.Label8.Text = "Estado"
         '
         'formDatosGenerales
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.CheckBox1)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.chkEstado)
+        Me.Controls.Add(Me.btnLimpiar)
+        Me.Controls.Add(Me.btnEliminar)
+        Me.Controls.Add(Me.btnAgregar)
+        Me.Controls.Add(Me.txtTelefono)
+        Me.Controls.Add(Me.txtEdad)
+        Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -220,18 +291,22 @@ Partial Class formDatosGenerales
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents txtEdad As TextBox
+    Friend WithEvents txtTelefono As TextBox
+    Friend WithEvents btnAgregar As Button
+    Friend WithEvents btnEliminar As Button
+    Friend WithEvents btnLimpiar As Button
+    Friend WithEvents chkEstado As CheckBox
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents lboNombres As ListBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents lboNombre As ListBox
+    Friend WithEvents txtContador As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents ListBox3 As ListBox
-    Friend WithEvents ListBox2 As ListBox
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents lboEstado As ListBox
+    Friend WithEvents lboTel As ListBox
+    Friend WithEvents lboEdad As ListBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
 End Class

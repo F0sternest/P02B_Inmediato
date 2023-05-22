@@ -19,25 +19,32 @@
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
         Dim l As Integer = lboNombre.SelectedIndex
-        If txtNombre.Text = "" And txtID.Text = "" Then
-            MsgBox("Porfavor introduzca un nombre o un id", MsgBoxStyle.Exclamation)
-            txtTelefono.Text = ""
-            txtEdad.Text = ""
-            txtNombre.Text = ""
-            txtID.Text = ""
-            txtNombre.Focus()
+        If l >= 0 Then
+            lboNombre.Items.RemoveAt(l)
+            lboEdad.Items.RemoveAt(l)
+            lboTel.Items.RemoveAt(l)
+            lboEstado.Items.RemoveAt(l)
+            lboID.Items.RemoveAt(l)
         Else
-            If Not txtID.Text = "" Then
-                If lboID.Items.IndexOf(CInt(txtID.Text)) >= 0 Then
-                    Dim idIndex As Integer = lboID.Items.IndexOf(CInt(txtID.Text))
-                    lboNombre.Items.RemoveAt(idIndex)
-                    lboEdad.Items.RemoveAt(idIndex)
-                    lboTel.Items.RemoveAt(idIndex)
-                    lboEstado.Items.RemoveAt(idIndex)
-                    lboID.Items.RemoveAt(idIndex)
-                End If
+            If txtNombre.Text = "" And txtID.Text = "" Then
+                MsgBox("Porfavor introduzca un nombre o un id", MsgBoxStyle.Exclamation)
+                txtTelefono.Text = ""
+                txtEdad.Text = ""
+                txtNombre.Text = ""
+                txtID.Text = ""
+                txtNombre.Focus()
+            Else
+                If Not txtID.Text = "" Then
+                    If lboID.Items.IndexOf(CInt(txtID.Text)) >= 0 Then
+                        Dim idIndex As Integer = lboID.Items.IndexOf(CInt(txtID.Text))
+                        lboNombre.Items.RemoveAt(idIndex)
+                        lboEdad.Items.RemoveAt(idIndex)
+                        lboTel.Items.RemoveAt(idIndex)
+                        lboEstado.Items.RemoveAt(idIndex)
+                        lboID.Items.RemoveAt(idIndex)
+                    End If
 
-            ElseIf Not txtNombre.Text = "" And lboNombre.Items.IndexOf(txtNombre.Text) >= 0 Then
+                ElseIf Not txtNombre.Text = "" And lboNombre.Items.IndexOf(txtNombre.Text) >= 0 Then
                     Dim nameIndex As Integer = lboNombre.Items.IndexOf(txtNombre.Text)
                     lboNombre.Items.RemoveAt(nameIndex)
                     lboEdad.Items.RemoveAt(nameIndex)
@@ -46,15 +53,19 @@
                     lboID.Items.RemoveAt(nameIndex)
                 Else
                     MsgBox("Porfavor introduzca el nombre de una persona de la lista o un ID valido", MsgBoxStyle.Exclamation)
+                    txtTelefono.Text = ""
+                    txtEdad.Text = ""
+                    txtNombre.Text = ""
+                End If
+                txtContador.Text = lboNombre.Items.Count
                 txtTelefono.Text = ""
                 txtEdad.Text = ""
                 txtNombre.Text = ""
+                txtID.Text = ""
             End If
-            txtContador.Text = lboNombre.Items.Count
-            txtTelefono.Text = ""
-            txtEdad.Text = ""
-            txtNombre.Text = ""
         End If
+
+
     End Sub
 
     Private Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click

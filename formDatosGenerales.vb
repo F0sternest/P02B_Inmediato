@@ -27,23 +27,25 @@
             txtID.Text = ""
             txtNombre.Focus()
         Else
-            If Not txtID.Text = "" And lboID.Items.IndexOf(CInt(txtID.Text)) >= 0 Then
-                Dim idIndex As Integer = lboID.Items.IndexOf(CInt(txtID.Text))
-                lboNombre.Items.RemoveAt(idIndex)
-                lboEdad.Items.RemoveAt(idIndex)
-                lboTel.Items.RemoveAt(idIndex)
-                lboEstado.Items.RemoveAt(idIndex)
-                lboID.Items.RemoveAt(idIndex)
+            If Not txtID.Text = "" Then
+                If lboID.Items.IndexOf(CInt(txtID.Text)) >= 0 Then
+                    Dim idIndex As Integer = lboID.Items.IndexOf(CInt(txtID.Text))
+                    lboNombre.Items.RemoveAt(idIndex)
+                    lboEdad.Items.RemoveAt(idIndex)
+                    lboTel.Items.RemoveAt(idIndex)
+                    lboEstado.Items.RemoveAt(idIndex)
+                    lboID.Items.RemoveAt(idIndex)
+                End If
 
             ElseIf Not txtNombre.Text = "" And lboNombre.Items.IndexOf(txtNombre.Text) >= 0 Then
-                Dim nameIndex As Integer = lboNombre.Items.IndexOf(txtNombre.Text)
-                lboNombre.Items.RemoveAt(nameIndex)
-                lboEdad.Items.RemoveAt(nameIndex)
-                lboTel.Items.RemoveAt(nameIndex)
-                lboEstado.Items.RemoveAt(nameIndex)
-                lboID.Items.RemoveAt(nameIndex)
-            Else
-                MsgBox("Porfavor introduzca el nombre de una persona de la lista o un ID valido", MsgBoxStyle.Exclamation)
+                    Dim nameIndex As Integer = lboNombre.Items.IndexOf(txtNombre.Text)
+                    lboNombre.Items.RemoveAt(nameIndex)
+                    lboEdad.Items.RemoveAt(nameIndex)
+                    lboTel.Items.RemoveAt(nameIndex)
+                    lboEstado.Items.RemoveAt(nameIndex)
+                    lboID.Items.RemoveAt(nameIndex)
+                Else
+                    MsgBox("Porfavor introduzca el nombre de una persona de la lista o un ID valido", MsgBoxStyle.Exclamation)
                 txtTelefono.Text = ""
                 txtEdad.Text = ""
                 txtNombre.Text = ""

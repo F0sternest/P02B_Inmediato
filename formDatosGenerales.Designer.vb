@@ -33,16 +33,20 @@ Partial Class formDatosGenerales
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.chkEstado = New System.Windows.Forms.CheckBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lbID = New System.Windows.Forms.Label()
+        Me.lboID = New System.Windows.Forms.ListBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.txtContador = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lboEstado = New System.Windows.Forms.ListBox()
         Me.lboTel = New System.Windows.Forms.ListBox()
         Me.lboEdad = New System.Windows.Forms.ListBox()
         Me.lboNombre = New System.Windows.Forms.ListBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtID = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -154,6 +158,8 @@ Partial Class formDatosGenerales
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.lbID)
+        Me.GroupBox1.Controls.Add(Me.lboID)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Label6)
@@ -165,12 +171,66 @@ Partial Class formDatosGenerales
         Me.GroupBox1.Controls.Add(Me.lboEdad)
         Me.GroupBox1.Controls.Add(Me.lboNombre)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(45, 186)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 186)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(709, 230)
+        Me.GroupBox1.Size = New System.Drawing.Size(776, 230)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Registro de datos"
+        '
+        'lbID
+        '
+        Me.lbID.AutoSize = True
+        Me.lbID.Location = New System.Drawing.Point(17, 34)
+        Me.lbID.Name = "lbID"
+        Me.lbID.Size = New System.Drawing.Size(21, 17)
+        Me.lbID.TabIndex = 17
+        Me.lbID.Text = "ID"
+        '
+        'lboID
+        '
+        Me.lboID.FormattingEnabled = True
+        Me.lboID.ItemHeight = 17
+        Me.lboID.Location = New System.Drawing.Point(15, 60)
+        Me.lboID.Name = "lboID"
+        Me.lboID.Size = New System.Drawing.Size(57, 106)
+        Me.lboID.TabIndex = 16
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(627, 34)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(48, 17)
+        Me.Label8.TabIndex = 15
+        Me.Label8.Text = "Estado"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(453, 34)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(59, 17)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "Telefono"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(314, 34)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(38, 17)
+        Me.Label6.TabIndex = 13
+        Me.Label6.Text = "Edad"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(91, 34)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(57, 17)
+        Me.Label5.TabIndex = 12
+        Me.Label5.Text = "Nombre"
         '
         'txtContador
         '
@@ -192,7 +252,7 @@ Partial Class formDatosGenerales
         '
         Me.lboEstado.FormattingEnabled = True
         Me.lboEstado.ItemHeight = 17
-        Me.lboEstado.Location = New System.Drawing.Point(565, 57)
+        Me.lboEstado.Location = New System.Drawing.Point(630, 60)
         Me.lboEstado.Name = "lboEstado"
         Me.lboEstado.Size = New System.Drawing.Size(123, 106)
         Me.lboEstado.TabIndex = 3
@@ -201,7 +261,7 @@ Partial Class formDatosGenerales
         '
         Me.lboTel.FormattingEnabled = True
         Me.lboTel.ItemHeight = 17
-        Me.lboTel.Location = New System.Drawing.Point(391, 57)
+        Me.lboTel.Location = New System.Drawing.Point(456, 60)
         Me.lboTel.Name = "lboTel"
         Me.lboTel.Size = New System.Drawing.Size(137, 106)
         Me.lboTel.TabIndex = 2
@@ -210,7 +270,7 @@ Partial Class formDatosGenerales
         '
         Me.lboEdad.FormattingEnabled = True
         Me.lboEdad.ItemHeight = 17
-        Me.lboEdad.Location = New System.Drawing.Point(252, 57)
+        Me.lboEdad.Location = New System.Drawing.Point(317, 60)
         Me.lboEdad.Name = "lboEdad"
         Me.lboEdad.Size = New System.Drawing.Size(104, 106)
         Me.lboEdad.TabIndex = 1
@@ -219,46 +279,27 @@ Partial Class formDatosGenerales
         '
         Me.lboNombre.FormattingEnabled = True
         Me.lboNombre.ItemHeight = 17
-        Me.lboNombre.Location = New System.Drawing.Point(18, 57)
+        Me.lboNombre.Location = New System.Drawing.Point(92, 60)
         Me.lboNombre.Name = "lboNombre"
         Me.lboNombre.Size = New System.Drawing.Size(204, 106)
         Me.lboNombre.TabIndex = 0
         '
-        'Label5
+        'txtID
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(15, 31)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(57, 17)
-        Me.Label5.TabIndex = 12
-        Me.Label5.Text = "Nombre"
+        Me.txtID.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtID.Location = New System.Drawing.Point(555, 91)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(64, 25)
+        Me.txtID.TabIndex = 13
         '
-        'Label6
+        'Label9
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(249, 31)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(38, 17)
-        Me.Label6.TabIndex = 13
-        Me.Label6.Text = "Edad"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(388, 31)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(59, 17)
-        Me.Label7.TabIndex = 14
-        Me.Label7.Text = "Telefono"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(562, 31)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(48, 17)
-        Me.Label8.TabIndex = 15
-        Me.Label8.Text = "Estado"
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(531, 98)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(18, 13)
+        Me.Label9.TabIndex = 18
+        Me.Label9.Text = "ID"
         '
         'formDatosGenerales
         '
@@ -267,6 +308,8 @@ Partial Class formDatosGenerales
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.txtID)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.chkEstado)
         Me.Controls.Add(Me.btnLimpiar)
@@ -309,4 +352,8 @@ Partial Class formDatosGenerales
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents lbID As Label
+    Friend WithEvents lboID As ListBox
+    Friend WithEvents txtID As TextBox
+    Friend WithEvents Label9 As Label
 End Class

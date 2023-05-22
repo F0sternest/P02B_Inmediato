@@ -182,9 +182,9 @@ Partial Class homeForm
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(26, 316)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(70, 19)
+        Me.Label7.Size = New System.Drawing.Size(150, 19)
         Me.Label7.TabIndex = 16
-        Me.Label7.Text = "Jorge Pitti"
+        Me.Label7.Text = "Jorge Pitti 8-976-1637"
         '
         'btnDatosGenerales
         '
